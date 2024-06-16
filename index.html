@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Java Urban</title>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Optional: Include Leaflet.markercluster CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <!-- Include your custom CSS file if needed -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="landing-page">
+        <img src="cover.jpg" alt="Landing Image" class="landing-image">
+        <div class="overlay-text">
+            <h1>URBAN EXPLORE ON JAVA ISLAND</h1>
+            <p>Java Island, as one of the most densely populated urban islands in Indonesia, offers a unique blend of bustling city life and breathtaking natural beauty. Known for its major cities like Jakarta, Surabaya, and Bandung, as well as historical cultural landmarks such as Borobudur and Prambanan temples, Java Island stands as a pivotal hub of economic activity, cultural richness, and influential tourism in Indonesia. Are You Ready to Explore Java Island </p>
+            <button id="swipeButton">Swipe to Explore!</button>
+        </div>
+    </div>
+    <!-- Table of Content -->
+    <div class="toc-container">
+        <div class="toc-item">
+            <h2>Urban City</h2>
+            <p>Urban centers characterized by large populations, modern infrastructure, and vibrant economic, cultural, and political activities. They offer career opportunities, extensive commercial facilities, and a variety of cultural and entertainment activities that reflect the diversity of their populations..</p>
+        </div>
+        <div class="toc-item">
+            <h2>Urban Spotlight</h2>
+            <p>Lively atmosphere distrcit, bustling street life, diverse shopping options, and cultural attractions, making them popular destinations for both locals and tourists.</p>
+        </div>
+        <div class="toc-item">
+            <h2>Iconic Place Map</h2>
+            <p>Places represent Indonesia's natural beauty, historical significance, or cultural uniqueness, often serving as symbols of the island's rich heritage and attracting visitors seeking memorable experiences.</p>
+        </div>
+    </div>
+    <div class= "map-description">
+        <h1>Urban City Map</h1>
+        <p>Urban cities on the island of Java are located in areas with good accessibility, especially in several areas on the north coast, such as Jakarta and Surabaya. Many cities are developing on the island of Java, of which Jakarta, Surabaya, Bandung, Yogyakarta, Semarang and Surakarta are the cities with the highest populations. See interesting facts about these cities on the map!</p>
+    </div>
+    <!-- Container for the first map -->
+    <div id="map1" class="map-container"></div>
+    <div class= "map-description">
+        <h1>Urban Spotlight Map</h1>
+        <p>The island of Java is famous for being one of the most densely populated islands in the world, with a population of more than 100 million, making the majority of cities urban areas. There are various cities that are famous for their density and interesting icons. Highly urbanized areas are in the cities of Jakarta and the city of Surabaya, this is relevant to their high population. Explore urban spotlights on the map!</p>
+    </div>
+    <!-- Container for the second map -->
+    <div id="map2" class="map-container"></div>
+    <div class= "map-description">
+        <h1>Iconic Place Map</h1>
+        <p>Behind the busy island of Java which is famous for its urban areas, it turns out that this area also has iconic places that make many tourists from all over the world visit here. Some of these places are known for their pristine natural beauty and several iconic places that hold historical value. Explore this iconic place on the map!</p>
+    </div>
+    <!-- Container for the second map -->
+    <div id="map3" class="map-container"></div>
+    <div class="foot-page">
+        <img src="Foot.jpg" alt="foot-Image" class="foot-image">
+        <div class="foot-text">
+            <h1>ITS YOUR TIME TO TAKE ADVENTURE IN JAVA URBAN LAND!</h1>
+            <p>More information can be site on google and browser!</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About</h3>
+                <p>This website was created to fulfill the final assignment for  spatial programming course. Compiled by Ahmad Haikal (22/505108/GE/10051).</p>
+            </div>
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Additional Information</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="Fb.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="X.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="Ig.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ahmad Haikal Major Cartography and Remote Sensing, Universitas Gajah Mada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Include Turf.js for geometry operations -->
+
+    <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+    <!-- Your JavaScript code for Leaflet maps -->
+    <script src="script.js"></script>
+</body>
+</html>
